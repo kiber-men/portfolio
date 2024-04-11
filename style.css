@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:wght@100..900&display=swap');
+* {
+    margin: 0;
+    font-family: inter;
+}
+section {
+    min-height: 100vh;
+}
+#about {
+    background-image: url(img/bgABOUT.png);
+}
+#main {
+    background-image: url(img/bgMAIN.png);
+}
+#skills {
+    background-image: url(img/bgSKILLS.png);
+}
+#works {
+    background-image: url(img/bgWORKS.png);
+}
+#comments {
+    background-image: url(img/bgCOMMENTS.png);
+}
