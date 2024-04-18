@@ -11,6 +11,12 @@ section {
 }
 #main {
     background-image: url(img/bgMAIN.png);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: -10;
 }
 #skills {
     background-image: url(img/bgSKILLS.png);
@@ -20,4 +26,45 @@ section {
 }
 #comments {
     background-image: url(img/bgCOMMENTS.png);
+}
+.main__window {
+    background-image: url(img/form1.png);
+    height: 230px;
+    width: 850px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.main__container {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.button {
+    background-color: greenyellow;
+    text-decoration: none;
+    font-weight: 800;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-top: 15px;
+    align-self: center;
+}
+.main__img {
+    height: 150px;
+    width: 150px;
+}
+.mars {
+    position: absolute;
+    top: 1000px;
+    left: 200px;
+    z-index: -1;
+}
+.saturn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
 }
