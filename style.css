@@ -2,6 +2,7 @@
 * {
     margin: 0;
     font-family: inter;
+    scroll-behavior: smooth;
 }
 section {
     min-height: 100vh;
@@ -31,6 +32,10 @@ section {
 }
 #works {
     background-image: url(img/bgWORKS.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 #comments {
     background-image: url(img/bgCOMMENTS.png);
@@ -258,4 +263,47 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+.works__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+}
+.work__card {
+    height: 275px;
+    margin-right: 20px;
+}
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pc__nav {
+    padding-right: 35%;
+}
+.logo {
+    font-size: 80px;
+    font-weight: 700;
+    color: #BBFF2C;
+    margin-left: 60px;
+}
+.nav__button {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: comfortaa;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+.active {
+    background-color: #792AFF;
+    color: white;
 }
