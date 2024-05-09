@@ -310,3 +310,94 @@ header {
 .nav__button:hover {
     background-color: #6411eb;
 }
+.mobile__button {
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+.mobile__nav {
+    background-color: #200153;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    z-index: -1;
+}
+.hidden {
+    display: none;
+}
+@media (max-width: 1000px) {
+    .pc__nav{
+        display: none;
+    }
+    .logo {
+        font-size: 40px;
+        margin-left: 20px;
+    }
+    .main__window {
+        height: 115px;
+        width: 425px;
+        background-size: contain;
+    }
+    .main__header {
+        font-size: 40px;
+
+    }
+    .main__text {
+        font-size: 10px;
+    }
+    .saturn {
+        display: none;
+    }
+    .mars {
+        animation: none;
+        bottom: -100px;
+        left: -100px;
+    }
+    .about__div {
+        flex-direction: column-reverse;
+    }
+    .info__div {
+        width: 376px;
+        margin-top: 35px;
+    }
+    .works__container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .comments__container {
+        flex-direction: column;
+    }
+    .cloud {
+        background-image: url(img/comment-mobile.png);
+        height: 70px;
+        margin-top: 15px;
+    }
+    .cloud__text {
+        font-size: 14px;
+    }
+    .comment__card {
+        margin-top: 20px;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center ;
+        gap: 40px;
+    }
+    .footer__baldtext {
+        text-align: center;
+    }
+    .mobile__button {
+        display: block;
+    }
+    .nav__button {
+        width: 210px;
+        text-align: center;
+    }
+}
