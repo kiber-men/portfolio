@@ -307,3 +307,6 @@ header {
     background-color: #792AFF;
     color: white;
 }
+.nav__button:hover {
+    background-color: #6411eb;
+}
