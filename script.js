@@ -27,4 +27,13 @@ let mobileMenu = document.querySelector(".mobile__nav");
 let menuButton = document.querySelector(".mobile__button");
 menuButton.addEventListener('click', e => {
     mobileMenu.classList.toggle ("hidden")
+    if (opened == false){
+        menuButton.firstElementChild.src = "img/close.png";
+        opened = true;
+    } else {
+        menuButton.firstElementChild.src = "img/mobile_menu.png";
+        opened = false; 
+    }
 })
+
+let opened = false;
