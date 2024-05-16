@@ -22,3 +22,9 @@ window.onscroll = function() {
     oldActive.classList.remove ("active")
     activeButton.classList.add ("active")
 }
+
+let mobileMenu = document.querySelector(".mobile__nav");
+let menuButton = document.querySelector(".mobile__button");
+menuButton.addEventListener('click', e => {
+    mobileMenu.classList.toggle ("hidden")
+})
