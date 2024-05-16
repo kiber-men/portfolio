@@ -17,6 +17,7 @@ window.onscroll = function() {
     }
     else {
         activeButton = buttons[0];
+
     }
     let oldActive = document.querySelector(".active");
     oldActive.classList.remove ("active")
@@ -26,14 +27,22 @@ window.onscroll = function() {
 let mobileMenu = document.querySelector(".mobile__nav");
 let menuButton = document.querySelector(".mobile__button");
 menuButton.addEventListener('click', e => {
+    toggleMenu();
+})
+let opened = false;
+mobileMenu.addEventListener('click', e => {
+    if (e.target.classList.contains("nav__button")) {
+        toggleMenu();
+    }
+})
+
+function toggleMenu (){
     mobileMenu.classList.toggle ("hidden")
     if (opened == false){
         menuButton.firstElementChild.src = "img/close.png";
         opened = true;
     } else {
         menuButton.firstElementChild.src = "img/mobile_menu.png";
-        opened = false; 
+        opened = false;
     }
-})
-
-let opened = false;
+}
